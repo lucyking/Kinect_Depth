@@ -13,7 +13,7 @@ Because Pi 2 support hf.
 
 
 
-- 2.Doxygen is necessary other ways make will fail.Using **apt-get install doxygen** will download 900M+ source.So we can build && install from [doxygen source](https://github.com/doxygen/doxygen).  
+- 2.Doxygen is necessary other ways make will fail.Using apt-get install doxygen will download 900M+ source.So we can build && install from [doxygen source](https://github.com/doxygen/doxygen).  
 
 
 

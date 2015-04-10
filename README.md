@@ -1,6 +1,6 @@
 # Kinect_Depth
 
-this code using Raspberry Pi 2+OpenNI+Sensor to get Kinect's depth data
+This code using Raspberry Pi 2+OpenNI+Sensor to get Kinect's depth data.
 
 1.Build and install [OpenNI](https://github.com/OpenNI/OpenNI)&&[Sensor](https://github.com/ruedigerH2/SensorKinect) according their README instroduction.   
 

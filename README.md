@@ -14,10 +14,7 @@
 Output format:     
      time>[x,y]:data
      
-     
      time: system uptime
-     x: x_axis
-     y: y_axis
      data: raw depth data,data~[0,2^11]  
 
 

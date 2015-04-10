@@ -3,10 +3,10 @@
 This code using **Raspberry Pi 2**+OpenNI+Sensor to output Kinect's depth data in text format.(**Raspberry Pi B+** not support so far).
 
 0.In OpenNI&&Sensor source, modify /Platform/Linux/Build/Common/Platform.Arm:  
-"""
+
         CFLAGS += -march=armv7-a -mfpu=neno #-mfloat-abi=softfp -mcpu=cortex-a8 -mtune=cortex-A7 
         ... ...
-"""
+
 Because Pi 2 support hf.
 
 1.Build and install [OpenNI](https://github.com/OpenNI/OpenNI)&&[Sensor](https://github.com/ruedigerH2/SensorKinect) according their README instroduction.   

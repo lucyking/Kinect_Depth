@@ -1,8 +1,15 @@
 # Kinect_Depth
 
-This code using Raspberry Pi 2+OpenNI+Sensor to get Kinect's depth data.
+This code using **Raspberry Pi 2**+**OpenNI**+**Sensor** to get Kinect's depth data.(Raspberry Pi B+ not support so far)
+
+0.In OpenNI&&Sensor, modify /Platform/Linux/Build/Common/Platform.Arm:
+        CFLAGS += -march=armv7-a -mfpu=neno #-mfloat-abi=softfp -mcpu=cortex-a8 -mtune=cortex-A7 
+        ... ...
+Because Pi 2 support hf.
 
 1.Build and install [OpenNI](https://github.com/OpenNI/OpenNI)&&[Sensor](https://github.com/ruedigerH2/SensorKinect) according their README instroduction.   
+
+
 
 2.Doxygen is necessary other ways make will fail.Using **apt-get install doxygen** will download 900M+ source.So we can build && install from [doxygen source](https://github.com/doxygen/doxygen).(there should be better meanings,please let me know : )    
 

@@ -1,6 +1,6 @@
 # Kinect_Depth
 
-This code using **Raspberry Pi 2**+**OpenNI**+**Sensor** to get Kinect's depth data.(Raspberry Pi B+ not support so far)
+This code using **Raspberry Pi 2**+**OpenNI**+**Sensor** to outpu Kinect's depth data in text format.(**Raspberry Pi B+ not support so far**).
 
 0.In OpenNI&&Sensor source, modify /Platform/Linux/Build/Common/Platform.Arm:
         CFLAGS += -march=armv7-a -mfpu=neno #-mfloat-abi=softfp -mcpu=cortex-a8 -mtune=cortex-A7 

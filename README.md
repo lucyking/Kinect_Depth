@@ -6,7 +6,7 @@ this code using Raspberry Pi 2+OpenNI+Sensor to get Kinect's depth data
 
 2.Doxygen is necessary other ways make will fail.Using **apt-get install doxygen** will download 900M+ source.So we can build && install from [doxygen source](https://github.com/doxygen/doxygen).(there should be better meanings,please let me know : )    
 
-3.Editing /usr/etc/primesense/GlobalDefaultsKinect.ini to uncomment the **;UsbInterface=2** line and change into **UsbInterface=1**   
+3.Editing /usr/etc/primesense/GlobalDefaultsKinect.ini to uncomment the **";UsbInterface=2"** line and change into **"UsbInterface=1"**   
 
 4.Bulid main.cpp:
   g++ -I/usr/include/ni/ -I/usr/include/GL -c main.cpp

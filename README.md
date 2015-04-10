@@ -22,4 +22,4 @@ Output format:
 
 
 ps: main.cpp is modified from OpenNI's SimpleViwer Sample.
-    I still fail to generate the video output as on PC(as you see,codes of glutDisplay are comment), any advice is appreciate :-)
+    I still fail to generate the video output as on PC(as you see,codes of glutDisplay are commented), any advice is appreciate :-)

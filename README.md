@@ -2,26 +2,26 @@
 
 This code using **Raspberry Pi 2**+OpenNI+Sensor to output Kinect's depth data in text format.(**Raspberry Pi B+** not support so far).
 
--0.In OpenNI&&Sensor source, modify /Platform/Linux/Build/Common/Platform.Arm:  
+- 0.In OpenNI&&Sensor source, modify /Platform/Linux/Build/Common/Platform.Arm:  
 
         CFLAGS += -march=armv7-a -mfpu=neno #-mfloat-abi=softfp -mcpu=cortex-a8 -mtune=cortex-A7 
         ... ...
 
 Because Pi 2 support hf.
 
--1.Build and install [OpenNI](https://github.com/OpenNI/OpenNI)&&[Sensor](https://github.com/ruedigerH2/SensorKinect) according their README instroduction.   
+- 1.Build and install [OpenNI](https://github.com/OpenNI/OpenNI)&&[Sensor](https://github.com/ruedigerH2/SensorKinect) according their README instroduction.   
 
 
 
--2.Doxygen is necessary other ways make will fail.Using **apt-get install doxygen** will download 900M+ source.So we can build && install from [doxygen source](https://github.com/doxygen/doxygen).  
+- 2.Doxygen is necessary other ways make will fail.Using **apt-get install doxygen** will download 900M+ source.So we can build && install from [doxygen source](https://github.com/doxygen/doxygen).  
 
 
 
--3.Editing /usr/etc/primesense/GlobalDefaultsKinect.ini to uncomment the **";UsbInterface=2"** line and change into **"UsbInterface=1"**   
+- 3.Editing /usr/etc/primesense/GlobalDefaultsKinect.ini to uncomment the **";UsbInterface=2"** line and change into **"UsbInterface=1"**   
 
 
 
--4.Bulid main.cpp: 
+- 4.Bulid main.cpp: 
 
         g++ -I/usr/include/ni/ -I/usr/include/GL -c main.cpp    
         g++ -o main main.o libOpenNI.so       
@@ -29,7 +29,7 @@ Because Pi 2 support hf.
 
 
   
--5.run the binnary then get the depth output in shell from Kinect. 
+- 5.run the binnary then get the depth output in shell from Kinect. 
 
 Output format:     
      time>[x,y]:data

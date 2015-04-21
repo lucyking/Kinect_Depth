@@ -3,9 +3,10 @@
 这个代码用树莓派2+OpenNI+Sensor来驱动Kinect并获取它的深度信息。树莓派B+及以前的版本是不支持的。【不要问我为什么 我为这事搞了快一个学期 直到树莓派2生产出来- -|||        
 - 0.在编译OpenNI和Sensor之前，需要稍微修改一下编译配置：     
    将/Platform/Linux/Build/Common/Platform.Arm某些选项注释掉(因为现在已经支持硬浮点计算了 所以我们就不用软浮点)：    
-'''   
    CFLAGS += -march=armv7-a -mfpu=neno #-mfloat-abi=softfp -mcpu=cortex-a8 -mtune=cortex-A7       
-'''
+- 1. 改完了就可以可以按照[OpenNI](https://github.com/OpenNI/OpenNI)和Sensor](https://github.com/ruedigerH2/SensorKinect)的官方README编译和安装了。 
+- 2.对的然后你会看到里面有一个选项说doxygen是不一定要装的 但是你会发现不装的话上面的编译会error 然后你就会apt-get install doxygen 接着就发现要下载900M多的文件 啊来让我们大喊一声滚你然后默默地去手动下载编译和安装[doxygen](https://github.com/doxygen/doxygen)
+- 
 
 
 ##1.build develop environment by yourself

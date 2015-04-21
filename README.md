@@ -41,5 +41,5 @@ Output format:
 ps: main.cpp is modified from OpenNI's SimpleViwer Sample.
     I still fail to generate the video output as on PC(as you see,codes of glutDisplay are commented), any advice is appreciate :-)
 ##2.自己搭建太麻烦？
-好的我把配置好的镜像上传到百度网盘了：[下载链接](http://pan.baidu.com/s/1bI7Em)
+好的我把配置好的镜像上传到百度网盘了：[下载链接](http://pan.baidu.com/s/1bI7Em)   
 直接用dd命令复刻到SD卡里再启动覆盘子2（无误）就可以了 超级方便有木有！

@@ -2,8 +2,11 @@
 ##1.自己搭建开发环境   
 这个代码用树莓派2+OpenNI+Sensor来驱动Kinect并获取它的深度信息。树莓派B+及以前的版本是不支持的。【不要问我为什么 我为这事搞了快一个学期 直到树莓派2生产出来- -|||        
 - 0.在编译OpenNI和Sensor之前，需要稍微修改一下编译配置：     
-   将/Platform/Linux/Build/Common/Platform.Arm某些选项注释掉：    
-   CFLAGS += -march=armv7-a -mfpu=neno #-mfloat-abi=softfp -mcpu=cortex-a8 -mtune=cortex-A7        
+   将/Platform/Linux/Build/Common/Platform.Arm某些选项注释掉(因为现在已经支持硬浮点计算了 所以我们就不用软浮点)：    
+'''   
+   CFLAGS += -march=armv7-a -mfpu=neno #-mfloat-abi=softfp -mcpu=cortex-a8 -mtune=cortex-A7       
+'''
+
 
 ##1.build develop environment by yourself
 This code using **Raspberry Pi 2**+OpenNI+Sensor to output Kinect's depth data in text format.(**Raspberry Pi B+** not support so far).

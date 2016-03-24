@@ -6,7 +6,7 @@
    CFLAGS += -march=armv7-a -mfpu=neno #-mfloat-abi=softfp -mcpu=cortex-a8 -mtune=cortex-A7       
 - 1. 改完了就可以可以按照[OpenNI](https://github.com/OpenNI/OpenNI)和Sensor](https://github.com/ruedigerH2/SensorKinect)的官方README编译和安装了。 
 - 2.对的然后你会看到里面有一个选项说doxygen是不一定要装的 但是你会发现不装的话上面的编译会error 然后你就会apt-get install doxygen 接着就发现要下载900M多的文件 啊来让我们大喊一声滚你然后默默地去手动下载编译和安装[doxygen](https://github.com/doxygen/doxygen)
-- 
+- todo
 
 
 ##1.build develop environment by yourself
